@@ -6,7 +6,7 @@
   <p>
     <a href="https://reikem.de/"><img src="https://img.shields.io/badge/Working_at-REIKEM-111827?style=for-the-badge&amp;logo=building&logoColor=white" alt="Working at REIKEM"></a>
     <a href="https://github.com/rkstraessler"><img src="https://img.shields.io/badge/GitHub-rkstraessler-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub rkstraessler"></a>
-    <a href="https://straessler.dev/"><img src="https://img.shields.io/badge/Website-straessler.dev-0ea5e9?style=for-the-badge&amp;logo=google-chrome&amp;logoColor=white" alt="Website straessler.dev"></a>
+    <img src="https://komarev.com/ghpvc/?username=rkstraessler&amp;label=Profile+views&amp;color=0ea5e9&amp;style=for-the-badge" alt="Profile views">
   </p>
 </div>
 
@@ -14,7 +14,7 @@
 
 - 🏢 Working at [REIKEM](https://reikem.de/) on practical software and internal developer tooling.
 - ⚡ My primary languages are **TypeScript** and **Rust**.
-- 🧩 I also work with JavaScript, PHP, Kotlin, Java, HTML, CSS, SQL and Bash.
+- 🧩 I also work with JavaScript, PHP, Kotlin, HTML, CSS, SQL and Bash.
 - 🧡 I enjoy TanStack, React, Bun, Node.js and the modern TypeScript ecosystem.
 - 🗄️ I build services around PostgreSQL, Redis, REST APIs, WebSockets and reliable data flows.
 - 🐳 I use Docker, Linux, GitHub Actions and self-hosted tooling to ship and maintain software.
@@ -31,13 +31,13 @@
 ### Additional languages
 
 <p>
-  <img src="https://skillicons.dev/icons?i=js,php,kotlin,java,html,css,bash" alt="JavaScript, PHP, Kotlin, Java, HTML, CSS and Bash">
+  <img src="https://skillicons.dev/icons?i=js,php,kotlin,html,css,bash" alt="JavaScript, PHP, Kotlin, HTML, CSS and Bash">
 </p>
 
 ### Frontend &amp; runtimes
 
 <p>
-  <img src="https://skillicons.dev/icons?i=react,tanstack,tailwind,vite,bun,nodejs" alt="React, TanStack, Tailwind CSS, Vite, Bun and Node.js">
+  <img src="https://skillicons.dev/icons?i=react,tailwind,vite,bun,nodejs" alt="React, Tailwind CSS, Vite, Bun and Node.js">
 </p>
 
 ### Backend, data &amp; infrastructure
@@ -56,12 +56,12 @@
 ## 📊 GitHub Activity
 
 <p>
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=rkstraessler&amp;show_icons=true&amp;hide_border=true&amp;theme=github_dark&amp;rank_icon=github" alt="GitHub profile statistics">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rkstraessler&amp;layout=compact&amp;langs_count=10&amp;hide_border=true&amp;theme=github_dark" alt="Top languages across public repositories">
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=rkstraessler&amp;theme=github_dark" alt="GitHub profile statistics">
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rkstraessler&amp;theme=github_dark" alt="Top languages across public repositories">
 </p>
 
 <p>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rkstraessler&amp;theme=github-dark-blue&amp;hide_border=true" alt="GitHub contribution streak">
+  <img src="https://streak-stats.demolab.com/?user=rkstraessler&amp;theme=github-dark-blue&amp;hide_border=true" alt="GitHub contribution streak">
 </p>
 
 <div align="center">

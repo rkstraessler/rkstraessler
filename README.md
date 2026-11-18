@@ -56,12 +56,13 @@
 ## 📊 GitHub Activity
 
 <p>
-  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=rkstraessler&amp;theme=github_dark" alt="GitHub profile statistics">
-  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rkstraessler&amp;theme=github_dark" alt="Top languages across public repositories">
-</p>
+  <img height="170"
+       src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=rkstraessler&amp;theme=github_dark&amp;v=2"
+       alt="GitHub profile statistics">
 
-<p>
-  <img src="https://streak-stats.demolab.com/?user=rkstraessler&amp;theme=github-dark-blue&amp;hide_border=true" alt="GitHub contribution streak">
+  <img height="170"
+       src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rkstraessler&amp;theme=github_dark&amp;v=2"
+       alt="Top languages across public repositories">
 </p>
 
 <div align="center">

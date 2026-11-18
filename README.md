@@ -31,7 +31,7 @@
 ### Additional languages
 
 <p>
-  <img src="https://skillicons.dev/icons?i=js,php,kotlin,html,css,bash" alt="JavaScript, PHP, Kotlin, HTML, CSS and Bash">
+  <img src="https://skillicons.dev/icons?i=js,php,kotlin,html,css,bash,go" alt="JavaScript, PHP, Kotlin, HTML, CSS, Bash and Go">
 </p>
 
 ### Frontend &amp; runtimes

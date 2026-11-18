@@ -55,15 +55,13 @@
 
 ## 📊 GitHub Activity
 
-<p>
-  <img height="170"
-       src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=rkstraessler&amp;theme=github_dark&amp;v=2"
-       alt="GitHub profile statistics">
+<img height="170"
+     src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=rkstraessler&amp;theme=github_dark&amp;v=2"
+     alt="GitHub profile statistics">
 
-  <img height="170"
-       src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rkstraessler&amp;theme=github_dark&amp;v=2"
-       alt="Top languages across public repositories">
-</p>
+<img height="170"
+     src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rkstraessler&amp;theme=github_dark&amp;v=2"
+     alt="Top languages across public repositories">
 
 <div align="center">
   <p>Made by Kevin Sträßler.</p>

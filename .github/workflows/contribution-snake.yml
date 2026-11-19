@@ -1,0 +1,81 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: '29 3 * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Generate snake SVGs
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            profile-snake-output/github-snake.svg
+            profile-snake-output/github-snake-dark.svg?palette=github-dark
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: contribution-snake
+          path: profile-snake-output/
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    needs: generate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    concurrency:
+      group: profile-readme-assets-main
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          persist-credentials: false
+
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: contribution-snake
+          path: profile-snake-output/
+
+      - name: Validate and commit snake SVGs
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          from xml.etree import ElementTree as ET
+
+          for name in ('github-snake.svg', 'github-snake-dark.svg'):
+              path = Path('profile-snake-output') / name
+              if not path.is_file() or path.stat().st_size == 0:
+                  raise SystemExit(f'Missing or empty SVG: {name}')
+              if ET.parse(path).getroot().tag != '{http://www.w3.org/2000/svg}svg':
+                  raise SystemExit(f'Unexpected SVG document: {name}')
+          PY
+          git add -- profile-snake-output/github-snake.svg profile-snake-output/github-snake-dark.svg
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: update contribution snake'
+          git -c credential.helper= -c 'credential.helper=!gh auth git-credential' push origin HEAD:main

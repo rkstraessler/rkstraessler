@@ -10,6 +10,13 @@
   </p>
 </div>
 
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rkstraessler/rkstraessler/main/profile-snake-output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rkstraessler/rkstraessler/main/profile-snake-output/github-snake.svg" />
+    <img src="https://raw.githubusercontent.com/rkstraessler/rkstraessler/main/profile-snake-output/github-snake.svg" alt="Animated GitHub contribution heatmap with a snake" />
+</picture>
+
+
 ## 🧑‍💻 About Me
 
 - 🏢 Working at [REIKEM](https://reikem.de/) on practical software and internal developer tooling.
@@ -55,13 +62,16 @@
 
 ## 📊 GitHub Activity
 
-<img height="170"
-     src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=rkstraessler&amp;theme=github_dark&amp;v=2"
-     alt="GitHub profile statistics">
-
-<img height="170"
-     src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rkstraessler&amp;theme=github_dark&amp;v=2"
-     alt="Top languages across public repositories">
+<p align="left">
+    <img
+        src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=rkstraessler&theme=github_dark"
+        alt="GitHub profile statistics"
+    />
+    <img
+        src="https://raw.githubusercontent.com/rkstraessler/rkstraessler/main/profile-summary-card-output/github_dark/1-repos-per-language.svg"
+        alt="Languages used across repositories"
+    />
+</p>
 
 <div align="center">
   <p>Made by Kevin Sträßler.</p>
